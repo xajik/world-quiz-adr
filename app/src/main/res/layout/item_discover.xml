@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_base_margin"
+    android:minHeight="@dimen/list_item_height">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/discover_country_image"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="@dimen/image_size"
+                    android:contentDescription="@null"
+                    android:padding="@dimen/image_padding"
+                    app:actualImageScaleType="centerInside"
+                    app:placeholderImage="@drawable/baseline_flag_black_24"
+                    app:placeholderImageScaleType="centerInside"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/discover_country_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+            <TextView
+                android:id="@+id/discover_country_code"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_50"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_base_content_padding">
+
+                <TextView
+                    android:id="@+id/discover_continent_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/continent"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+                <TextView
+                    android:id="@+id/discover_continent_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_base_content_padding">
+
+                <TextView
+                    android:id="@+id/discover_capital_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/capital"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+                <TextView
+                    android:id="@+id/discover_capital_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_base_content_padding">
+
+                <TextView
+                    android:id="@+id/discover_population_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/population"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+                <TextView
+                    android:id="@+id/discover_population_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_base_content_padding">
+
+                <TextView
+                    android:id="@+id/discover_area_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/area"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+                <TextView
+                    android:id="@+id/discover_area_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

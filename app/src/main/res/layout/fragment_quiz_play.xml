@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_map"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:weightSum="5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clipChildren="false">
+
+            <ProgressBar
+                android:id="@+id/quiz_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:max="60"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular_shape" />
+
+            <TextView
+                android:id="@+id/quiz_progress_timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/quiz_point_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="top|start"
+                    android:text="Points: "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+
+                <TextView
+                    android:id="@+id/quiz_point_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="top|start"
+                    android:text="0"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/quiz_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_rounded_accent"
+                android:gravity="center"
+                android:minHeight="@dimen/list_item_height"
+                android:padding="@dimen/card_base_content_padding"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/quiz_question_image"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/guess_flag"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_flag_black_24"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:stretchMode="columnWidth"
+            app:alignmentMode="alignBounds"
+            app:columnCount="2"
+            app:rowCount="2"
+            app:rowOrderPreserved="false"
+            app:useDefaultMargins="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipChildren="false"
+                android:gravity="center"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/quiz_answer_top_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button_accent_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/card_base_content_padding"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/white"
+                    tools:text="test1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipChildren="false"
+                android:gravity="center"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/quiz_answer_top_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button_accent_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/card_base_content_padding"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/white"
+                    tools:text="test2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipChildren="false"
+                android:gravity="center"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/quiz_answer_bottom_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button_accent_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/card_base_content_padding"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/white"
+                    tools:text="test3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:clipChildren="false"
+                android:gravity="center"
+                app:layout_columnWeight="1"
+                app:layout_gravity="fill"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/quiz_answer_bottom_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_button_accent_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="@dimen/card_base_content_padding"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                    android:textColor="@android:color/white"
+                    tools:text="test4" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.GridLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

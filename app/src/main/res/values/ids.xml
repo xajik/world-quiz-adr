@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="rules_recycler_view" type="id" />
+    <item name="rules_title" type="id" />
+    <item name="rules_sub_title" type="id" />
+
+    <item name="main_container" type="id" />
+    <item name="content_container" type="id" />
+
+    <item name="discover_holder" type="id" />
+    <item name="discover_search" type="id" />
+    <item name="discover_search_input" type="id" />
+    <item name="discover_recycler" type="id" />
+    <item name="discover_country_image" type="id" />
+    <item name="discover_country_name" type="id" />
+    <item name="discover_country_code" type="id" />
+    <item name="discover_continent_value" type="id" />
+    <item name="discover_capital_value" type="id" />
+    <item name="discover_population_value" type="id" />
+    <item name="discover_area_value" type="id" />
+    <item name="discover_gray_background" type="id" />
+
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/layer_background" />
+
+
+    <LinearLayout
+        android:id="@+id/quiz_start_max_score_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/card_base_content_padding"
+            android:text="@string/max_score"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/quiz_start_max_score_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/card_base_content_padding"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_start_failed_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/grey_50"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/quiz_start_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/card_base_content_padding"
+                android:text="@string/start_quiz"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1" />
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/quiz_start_settings_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:stretchMode="columnWidth"
+                app:alignmentMode="alignBounds"
+                app:columnCount="2"
+                app:rowOrderPreserved="false"
+                app:useDefaultMargins="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/capital"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+                    <CheckBox
+                        android:id="@+id/quiz_start_setting_capital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/population"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+                    <CheckBox
+                        android:id="@+id/quiz_start_setting_population"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/area"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+                    <CheckBox
+                        android:id="@+id/quiz_start_setting_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/continent"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+                    <CheckBox
+                        android:id="@+id/quiz_start_setting_continent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center|center_vertical"
+                        android:text="@string/is_capital_of"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+                    <CheckBox
+                        android:id="@+id/quiz_start_setting_capital_of"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:gravity="end|center_vertical" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/quiz_start_action_button"
+            style="@style/Base.TextAppearance.AppCompat.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:drawableStart="@drawable/ic_baseline_play_arrow_24px"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="@string/play"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layer_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

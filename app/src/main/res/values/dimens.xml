@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_title">36dp</dimen>
+    <dimen name="text_title_action_bar">18dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="list_item_header_height">48dp</dimen>
+    <dimen name="image_size">48dp</dimen>
+    <dimen name="button_map_width">48dp</dimen>
+    <dimen name="button_map_height">32dp</dimen>
+    <dimen name="image_padding">4dp</dimen>
+    <dimen name="image_size_big">64dp</dimen>
+    <dimen name="visit_flag_size">96dp</dimen>
+    <dimen name="inner_dialog_padding">16dp</dimen>
+    <dimen name="card_base_margin">3dp</dimen>
+    <dimen name="card_base_content_padding">5dp</dimen>
+    <dimen name="widget_cell_size">40dp</dimen>
+    <dimen name="image_cell_margin">12dp</dimen>
+    <dimen name="toolbar_text_padding">2dp</dimen>
+    <dimen name="toolbar_title_head_side">7dp</dimen>
+    <dimen name="toolbar_title_head_top">3dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_double_height">104dp</dimen>
+    <dimen name="profile_side_padding">2dp</dimen>
+    <dimen name="drawer_content_margin">8dp</dimen>
+    <dimen name="drawer_content_margin_small">4dp</dimen>
+    <dimen name="comment_text_max_width">200dp</dimen>
+    <dimen name="comment_text_min_width">20dp</dimen>
+    <dimen name="comment_status_size">16dp</dimen>
+    <dimen name="comment_like_text">8dp</dimen>
+    <dimen name="comment_like_holder">24dp</dimen>
+    <dimen name="toolbar_tab_height">38dp</dimen>
+    <dimen name="rounded_shape_radius">10dp</dimen>
+    <dimen name="toolbar_collapsing_image_height">200dp</dimen>
+    <dimen name="rate_me_dialog_height">290dp</dimen>
+    <dimen name="rate_me_dialog_width">250dp</dimen>
+    <dimen name="comment_date_text">10sp</dimen>
+    <dimen name="image_item_margin">5dp</dimen>
+    <dimen name="visit_header_like">32dp</dimen>
+
+</resources>

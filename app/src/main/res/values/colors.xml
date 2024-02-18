@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorPrimaryMy</color>
+    <color name="colorPrimaryDark">@color/colorPrimaryDarkMy</color>
+    <color name="colorAccent">@color/sunflower_light</color>
+    <color name="colorAccentDark">@color/sunflower_dark</color>
+
+    <color name="colorPrimaryMy">#3380a6</color>
+    <color name="colorPrimaryDarkMy">#286684</color>
+
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_700_light">#1d83e7</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_800_light">#1f71ce</color>
+    <color name="blue_900">#0D47A1</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="light_blue_700">#0288D1</color>
+    <color name="indigo_400">#5C6BC0</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="yellow_700">#FBC02D</color>
+    <color name="yellow_800">#F9A825</color>
+    <color name="yellow_900">#F57F17</color>
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="red_500">#F44336</color>
+    <color name="splash_background_overlay">#315678</color>
+
+    <color name="web_view_loading_color">#232C4A</color>
+
+    <color name="colorQuizQuestion">@color/colorAccent</color>
+    <color name="colorQuizAnswer">@color/colorPrimary</color>
+
+    <color name="white_half_transparent">#a4ffffff</color>
+
+    <color name="toolbar_title">#fbfcfa</color>
+    <color name="aqua_light">#4FC1E9</color>
+    <color name="aqua_dark">#3BAFDA</color>
+    <color name="blue_jeans_light">#5D9CEC</color>
+    <color name="blue_jeans_dark">#4A89DC</color>
+    <color name="sunflower_light">#FFCE54</color>
+    <color name="sunflower_dark">#F6BB42</color>
+    <color name="mint_light">#48CFAD</color>
+    <color name="mint_dark">#37BC9B</color>
+    <color name="telegram_light">#5482ab</color>
+    <color name="telegram_dark">#3e5f7c</color>
+    <color name="vk_light">#5382b8</color>
+    <color name="vk_dark">#3a5e85</color>
+
+    <color name="blue_900_transparent">#730d47a1</color>
+</resources>
